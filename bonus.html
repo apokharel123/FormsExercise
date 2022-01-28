@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Experience Survey</title>
+    <form>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+
+            
+            <label for="storenumber">Store Number</label>
+            <select name="storenumber" id="storenumber">
+                <option hidden>Select A Store</option>
+
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+                <fieldset>
+                <legend>When you visited:</legend>
+                <label for="datevisited">Date Visited</label>
+                <input type="date" id="datevisited" value="
+                2022-01-01" min="2022-01-01" max="2022-12-31">
+                <br>
+                <label for="Time">Time</label>
+                <input type="time" id="Time" value="00: 00 00" >
+            </fieldset>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email"  placeholder="Email">
+            <br>
+            <br>
+            
+            <fieldset>
+                <legend>How would you rate your level of satisfaction with your visit?</legend>
+                <input type="radio" id="satisfied" name="radiolink">
+                <label for="satisfied">Satisfied</label>
+                <br>
+                <input type="radio" id="neither satisfied" name="radiolink" checked>
+                <label for="neither satisfied">Neither Satisfied not Dissatisfied </label>
+                <br>
+                <input type="radio" id="dissatisfied" name="radolink">
+                <label for="dissatisfied">Dissatisfied</label>
+                
+                
+                
+            </fieldset>
+            <legend>Tell us about your experience</legend>
+            <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
+            <br>
+            <legend>Times visited in the last month</legend>
+            <input type="number" id="times" value="" min="1" max="30">
+            <br>
+            <input type="checkbox" id="checkbox" name="checkbox" required >
+            <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
+            <br>
+           
+            <label for="password">Password</label>
+            <input type="password" id="password"  pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length" required>
+           
+
+            <br>
+            <button>Reset</button> <button>Submit</button>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </fieldset>
+        </form>
+        
+</head>
+<body>
+    
+</body>
+</html>
